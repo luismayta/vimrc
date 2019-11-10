@@ -129,7 +129,7 @@ def MakeRelativePathsInFlagsAbsolute(flags, working_directory):
                 break
 
             if flag.startswith(path_flag):
-                path = flag[len(path_flag) :]
+                path = flag[len(path_flag) : len(flag)]
                 new_flag = path_flag + os.path.join(working_directory, path)
                 break
 
