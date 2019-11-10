@@ -1,16 +1,13 @@
-zsh-clean
-==========
-
-Build
------
+vimrc
+=====
 
 |Build Status| |GitHub issues| |GitHub license|
 
 :Version: 0.0.0
-:Web: https://github.com/luismayta/zsh-clean
-:Download: https://github.com/luismayta/zsh-clean
-:Source: https://github.com/luismayta/zsh-clean
-:Keywords: zsh-clean
+:Web: https://github.com/luismayta/vimrc
+:Download: https://github.com/luismayta/vimrc
+:Source: https://github.com/luismayta/vimrc
+:Keywords: vimrc
 
 .. contents:: Table of Contents:
     :local:
@@ -20,55 +17,33 @@ Features
 
 * Task
 
-Dependencies
-------------
-
-List of applications:
-
 Installation
 ------------
 
-`oh-my-zsh <https://github.com/robbyrussell/oh-my-zsh>`__ users
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dotfiles is installed by running one of the following commands in your
+terminal. You can install this via the command-line with either ``curl``
+or ``wget``.
 
-If you're using
-`oh-my-zsh <https://gitub.com/robbyrussell/oh-my-zsh>`__, install this
-plugin by doing the following:
+Prerequisites
+~~~~~~~~~~~~~
 
-1. Go to your oh-my-zsh custom plugins directory -
-   ``cd ~/.oh-my-zsh/custom/plugins``
-2. Clone the plugin
-   ``bash   git clone https://github.com/luismayta/zsh-clean``\ bash
-3. Edit your ``.zshrc`` and add
-   ``plugins=( ... zsh-clean )`` to your list of
-   plugins
-4. Open a new terminal and enjoy!
+This is a list of applications that need to be installed previously to
+enjoy all the goodies of this configuration.
 
-`antigen <https://github.com/zsh-users/antigen>`__ users
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-  `Git <http://git-scm.com>`__
+-  `Curl <https://github.com/bagder/curl>`__
+-  `Wget <http://www.gnu.org/software/wget>`__
 
-If you're using `Antigen <https://github.com/zsh-lovers/antigen>`__,
-install this plugin by doing the following:
+via curl
+~~~~~~~~
 
-1. Add ``antigen bundle luismayta/zsh-clean`` to your
-   ``.zshrc`` where you're adding your other plugins.
-2. Either open a new terminal to force zsh to load the new plugin, or
-   run ``antigen bundle luismayta/zsh-clean`` in a
-   running zsh session.
-3. Enjoy!
+``bash -c "$(curl -fsSL https://rebrand.ly/hoy4pz)"``
 
-`antibody <https://github.com/getantibody/antibody>`__ users
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+via wget
+~~~~~~~~
 
-If you're using `Antigen <https://github.com/getantibody/antibody>`__,
-install this plugin by doing the following:
+``bash -c "$(wget https://rebrand.ly/hoy4pz -O -)"``
 
-1. Add ``antibody bundle luismayta/zsh-clean`` to your
-   ``.zshrc`` where you're adding your other plugins.
-2. Either open a new terminal to force zsh to load the new plugin, or
-   run ``antibody bundle luismayta/zsh-clean`` in a
-   running zsh session.
-3. Enjoy!
 
 Quick Start
 ===========
@@ -157,10 +132,10 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 .. _`Website`: http://luismayta.github.io
 .. _`PGP`: https://keybase.io/luismayta/pgp_keys.asc
 
-.. |Build Status| image:: https://travis-ci.org/luismayta/zsh-clean.svg
-   :target: https://travis-ci.org/luismayta/zsh-clean
-.. |GitHub issues| image:: https://img.shields.io/github/issues/luismayta/zsh-clean.svg
-   :target: https://github.com/luismayta/zsh-clean/issues
+.. |Build Status| image:: https://travis-ci.org/luismayta/vimrc.svg
+   :target: https://travis-ci.org/luismayta/vimrc
+.. |GitHub issues| image:: https://img.shields.io/github/issues/luismayta/vimrc.svg
+   :target: https://github.com/luismayta/vimrc/issues
 .. |GitHub license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
    :target: LICENSE
 
@@ -171,13 +146,12 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 .. Footer:
 .. |linkedin| image:: http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png
    :target: http://pe.linkedin.com/in/luismayta
-.. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/hadenlabs/zsh-clean/readme
-   :target: https://github.com/hadenlabs/zsh-clean
+.. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/luismayta/vimrc/readme
+   :target: https://github.com/luismayta/vimrc
 .. |made| image:: https://img.shields.io/badge/Made%20with-Zsh-1f425f.svg
    :target: http://www.zsh.org
 
 .. Dependences:
 
-.. _Python 3.6.4: https://www.python.org/downloads/release/python-364
 .. _Docker: https://www.docker.com/
 .. _Docker Compose: https://docs.docker.com/compose/
