@@ -493,8 +493,8 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 :nmap <silent> <leader>d <Plug>DashSearch
 
 " Use persistent undo.
-if !isdirectory($HOME"/.vim/undo")
-    call mkdir($HOME"/.vim/undo", "", 0700)
+if !isdirectory($HOME."/.vim/undo")
+    call mkdir($HOME."/.vim/undo", "", 0700)
 endif
 set undodir=$HOME/.vim/undo
 set undofile
