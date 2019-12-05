@@ -23,6 +23,7 @@ call vundle#begin()
     "-------------------=== Colour/Schemes ===-------------
     Plugin 'altercation/vim-colors-solarized'
     Plugin 'joshdick/onedark.vim'
+    Plugin 'davidcelis/vim-ariake-dark'
     Plugin 'arcticicestudio/nord-vim'           " Colorschemes
     Plugin 'rakr/vim-one'
 
@@ -198,10 +199,10 @@ endif
 "" Theme settings.
 "=====================================================
 
-" Syntax highlighting on, dark background, onedark theme.
+" Syntax highlighting on, dark background, Ariake theme.
 syntax on
-" set background=dark
-colorscheme onedark
+colorscheme Ariake-Dark
+set background=dark
 
 " Enable the mouse. Also enable when in tmux.
 set mouse=a
