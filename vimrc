@@ -177,7 +177,7 @@ if (has("termguicolors"))
     set termguicolors
 endif
 
-let g:onedark_termcolors=256
+" let g:onedark_termcolors=256
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
@@ -254,10 +254,10 @@ map <leader>t :NERDTreeFind<cr>
 "" AirLine settings
 "=====================================================
 
-let g:airline_theme='onedark'
+let g:airline_powerline_fonts=1
+let g:airline_theme='base16'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter='unique_tail'
-let g:airline_powerline_fonts=1
 
 "=====================================================
 "" Language Settings
