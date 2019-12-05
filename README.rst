@@ -116,7 +116,7 @@ Feel free to contact me to discuss any issues, questions, or comments.
 Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 
 .. Links
-.. _`changelog`: docs/source/CHANGELOG.rst
+.. _`changelog`: CHANGELOG.rst
 .. _`contributors`: AUTHORS
 .. _`contributing`: docs/source/CONTRIBUTING.rst
 
@@ -153,5 +153,5 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 
 .. Dependences:
 
+.. _Pyenv: https://github.com/pyenv/pyenv
 .. _Docker: https://www.docker.com/
-.. _Docker Compose: https://docs.docker.com/compose/
