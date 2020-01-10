@@ -40,6 +40,7 @@ call vundle#begin()
     Plugin 'rosenfeld/conque-term'              " Consoles as buffers
     Plugin 'tpope/vim-surround'                 " Parentheses, brackets, quotes, XML tags, and more
     Plugin 'wakatime/vim-wakatime'              " Wakatime statics
+    Plugin 'https://gitlab.com/code-stats/code-stats-vim.git'              " code stats
     Plugin 'editorconfig/editorconfig-vim'      " Editorconfig
     Plugin 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux/vim splits.
     Plugin 'tpope/vim-fugitive'  " Git support.
@@ -138,6 +139,12 @@ set colorcolumn=80      " highlight column 80
 set ruler
 
 "=====================================================
+"" Code stats settings
+"=====================================================
+
+let g:codestats_api_key = $CODESTATS_API_KEY
+
+"=====================================================
 "" TagBar settings
 "=====================================================
 let g:tagbar_autofocus=0
@@ -201,7 +208,7 @@ endif
 
 " Syntax highlighting on, dark background, Ariake theme.
 syntax on
-colorscheme Ariake-Dark
+colorscheme nord
 set background=dark
 
 " Enable the mouse. Also enable when in tmux.
@@ -258,6 +265,8 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='base16'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter='unique_tail'
+" implement of code stats
+let g:airline_section_x = airline#section#create_right(['tagbar', 'filetype', '%{CodeStatsXp()}'])
 
 "=====================================================
 "" Language Settings
