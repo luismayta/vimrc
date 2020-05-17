@@ -28,4 +28,4 @@ install:
 
 # execute test
 script:
-  - make test.all
+  - make test.lint
