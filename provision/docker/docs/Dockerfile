@@ -1,15 +1,28 @@
-FROM equipindustry/python:3.8.0-slim
+FROM sphinxdoc/docker-ci
 
-MAINTAINER Luis Mayta <@slovacus>
+MAINTAINER Luis Mayta <slovacus@gmail.com>
 
 ARG stage
 
-LABEL NAME vimrc-app-$stage
+LABEL NAME vimrc-doc
 
 ENV USERNAME developer
-ENV PACKAGES bash \
-  openssl
 
+ENV PACKAGES bash \
+  git \
+  gcc \
+  libc-dev \
+  make \
+  musl-dev \
+  openssl \
+  gcc \
+  libgdal20 \
+  libev-dev \
+  curl \
+  wget \
+  tar \
+  zsh \
+  jq
 
 COPY Pipfile* /usr/src/
 
