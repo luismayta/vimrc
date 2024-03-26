@@ -19,7 +19,7 @@
     "access": "private"
   },
   "engines": {
-    "node": ">=v12.22.12"
+    "node": ">=18.20.0"
   },
   "husky": {
     "hooks": {
